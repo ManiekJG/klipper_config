@@ -55,9 +55,3 @@ restart_klipper_when_powered = True
 restart_delay = 1.
 initial_state = OFF
 
-[update_manager fluidd]
-type = web
-channel = stable
-repo = fluidd-core/fluidd
-path = ~/fluidd
-
