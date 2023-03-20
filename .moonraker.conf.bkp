@@ -38,13 +38,6 @@ type = web
 repo = mainsail-crew/mainsail
 path = ~/mainsail
 
-[update_manager client z_calibration]
-type = git_repo
-path = ~/klipper_z_calibration
-origin = https://github.com/protoloft/klipper_z_calibration.git
-install_script = install.sh
-managed_services = klipper
-
 [power printer]
 type = gpio
 pin = !gpio27
@@ -53,4 +46,5 @@ locked_while_printing = True
 restart_klipper_when_powered = True
 restart_delay = 1.
 initial_state = OFF
+bound_services = klipper
 
